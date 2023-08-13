@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Group Anyway" />
+    <meta name="description" content="Portfolio, Sulwhasoo clone coding" />
+    <title>Portfolio, Sulwhasoo</title>
+
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon/favicon32.png" />
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon/favicon144.png"/>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+
+    <!-- 기본 코딩 CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/about.css" />
+
+    <!-- 애니메이션 CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 스와이퍼 CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <!-- 모바일/태블릿 버전 header -->
+      <div class="moblie_header_inner">
+        <div class="hamburger">
+          <button type="button" id="sideBar_open"><i class="icon_menu"></i></button>
+        </div>
+        <div class="logo">
+          <a href="index.html" class="logo_a">
+            <img src="./images/main/sulwhasoo_orange_logo_220902.png" alt="설화수로고">
+          </a>
+        </div>
+        <div class="search"><img src="./images/main/icon/search_black_icon.png" alt="서치아이콘"></div>
+      </div>
+      <!-- /모바일/태블릿 버전 header -->
+
+      <!-- PC버전 header -->
+      <div class="pc_header_inner">
+        <div class="pc_lnb w1100">
+          <div class="language_select">한국/한국어 <img src="./images/main/icon/language_arrow_black.png" alt="언어선택탭" id="language_icon"></div>
+          <div class="pc_logo"><a href="index.html"><img src="./images/main/sulwhasoo_orange_logo_220902.png" alt="설화수로고" id="pc_orange_logo"></a></div>
+          <div class="search_area">
+            <span>매장찾기</span>
+            <span>구매하기</span>
+            <span><img src="./images/main/icon/search_black_icon.png" alt="서치아이콘" id="search_icon"></span>
+          </div>
+        </div>
+        <div class="pc_nav">
+          <ul class="pc_gnb_menu">
+            <!-- a 링크 추후 각 페이지로 수정 -->
+            <li class="pc_nav_d1"><a href="#" class="d1_menu">윤조</a></li>
+            <li class="pc_nav_d1"><a href="#" class="d1_menu">자음생</a></li>
+            <li class="pc_nav_d1"><a href="gift.html" class="d1_menu">기프트</a></li>
+            <li class="pc_nav_d1"><a href="#" class="d1_menu">제품</a>
+              <ul class="pc_nav_d2_box">
+                <div class="pc_nav_d2_container d2_box1">
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">스킨케어</a></li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">메이크업</a></li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">남성</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="pc_nav_d1"><a href="#" class="d1_menu">스파</a>
+              <ul class="pc_nav_d2_box">
+                <div class="pc_nav_d2_container d2_box2">
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">소개</a></li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">스파 프로그램</a></li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">예약</a></li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">매장 찾기</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="pc_nav_d1"><a href="#" class="d1_menu">플래그십 스토어</a>
+              <ul class="pc_nav_d2_box">
+                <div class="pc_nav_d2_container d2_box3">
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">설화수 북촌</a></li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_hover">설화수 도산</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="pc_nav_d1"><a href="#" class="d1_menu">ABOUT 설화수</a>
+              <ul class="pc_nav_d2_box">
+                <div class="pc_nav_d2_container d2_box4">
+                  <li class="pc_nav_d2"><a href="#" class="d2_menu">브랜드 스토리</a>
+                    <ul class="pc_nav_d3_box">
+                      <li class="pc_nav_d3"><a href="#">브랜드 빌리프</a></li>
+                      <li class="pc_nav_d3"><a href="#">브랜드 캠페인</a></li>
+                    </ul>
+                  </li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_menu">브랜드 앰버서더</a>
+                    <ul class="pc_nav_d3_box">
+                      <li class="pc_nav_d3"><a href="#">로제</a></li>
+                      <li class="pc_nav_d3"><a href="#">틸다 스윈튼</a></li>
+                    </ul>
+                  </li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_menu">ART</a>
+                    <ul class="pc_nav_d3_box">
+                      <li class="pc_nav_d3"><a href="#">MET</a></li>
+                      <li class="pc_nav_d3"><a href="#">설화문학전</a></li>
+                    </ul>
+                  </li>
+                  <li class="pc_nav_d2"><a href="#" class="d2_menu">HERITAGE</a>
+                    <ul class="pc_nav_d3_box">
+                      <li class="pc_nav_d3"><a href="#">SINCE 1932</a></li>
+                      <li class="pc_nav_d3"><a href="#">명작컬렉션</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="hover_border"></div>
+      </div>
+      <!-- /PC버전 header -->
+    </header>
+    <!-- /Header -->
+ <!-- Side MENU -->
+ <div class="side_cover">
+  <div class="side_header">
+    <a href="#" class="orange_logo"></a>
+    <button type="button" class="close_btn"></button>
+  </div>
+  <nav id="side_bar" class="side_bar">
+    <div class="sideBox">
+      <div class="side_content">
+        <ul id="global_nav" class="nav_list">
+          <li class="nav_d1"><a href="#" class="no_depth_menu">윤조</a></li>
+          <li class="nav_d1"><a href="#" class="no_depth_menu">자음생</a></li>
+          <li class="nav_d1"><a href="gift.html" class="no_depth_menu">기프트</a></li>
+          <li class="nav_d1"><a href="#" class="depth_toggle">제품</a>
+            <ul class="nav_d2_box">
+              <li class="nav_d2"><a href="#" class="nav_d2_menu">스킨케어</a></li>
+              <li class="nav_d2"><a href="#" class="nav_d2_menu">메이크업</a></li>
+              <li class="nav_d2"><a href="#">남성</a></li>
+            </ul>
+          </li>
+          <li class="nav_d1"><a href="#" class="depth_toggle">스파</a>
+            <ul class="nav_d2_box">
+              <li class="nav_d2"><a href="#" class="nav_d2_menu">소개</a></li>
+              <li class="nav_d2"><a href="#" class="nav_d2_menu">스파 프로그램</a></li>
+              <li class="nav_d2"><a href="#" class="nav_d2_menu">예약</a></li>
+              <li class="nav_d2"><a href="#">매장 찾기</a></li>
+            </ul>
+          </li>
+          <li class="nav_d1"><a href="#" class="depth_toggle">플래그십 스토어</a>
+            <ul class="nav_d2_box">
+              <li class="nav_d2"><a href="#" class="nav_d2_menu">플래그십 스토어</a></li>
+              <li class="nav_d2"><a href="#" class="nav_d2_menu">설화수 북촌</a></li>
+              <li class="nav_d2"><a href="#">설화수 도산</a></li>
+            </ul>
+          </li>
+          <li class="nav_d1"><a href="#" class="depth_toggle">ABOUT 설화수</a>
+            <ul class="nav_d2_box">
+              <li class="nav_d2"><a href="#" class="nav_d2_menu nav_d3_menu">브랜드 스토리</a>
+                <ul class="nav_d3_box">
+                  <li class="nav_d3"><a href="#">브랜드 빌리프</a></li>
+                  <li class="nav_d3"><a href="#">브랜드 캠페인</a></li>
+                </ul>
+              </li>
+              <li class="nav_d2"><a href="#" class="nav_d2_menu nav_d3_menu">브랜드 앰버서더</a>
+                <ul class="nav_d3_box">
+                  <li class="nav_d3"><a href="#">로제</a></li>
+                  <ul class="nav_d4_box">
+                    <li class="nav_d4"><a href="#">PART 1 SULWHASOO REBLOOM</a></li>
+                    <li class="nav_d4"><a href="#">PART 2 ROSÉ IN BUKCHON</a></li>
+                  </ul>
+                  <li class="nav_d3"><a href="#" class="nav_d2_menu">틸다 스윈튼</a></li>
+                </ul>
+              </li>
+              <li class="nav_d2 b500"><a href="#" class="nav_d2_menu nav_d3_menu">ART</a>
+                <ul class="nav_d3_box">
+                  <li class="nav_d3 b500"><a href="#">MET</a></li>
+                  <li class="nav_d3"><a href="#" class="nav_d2_menu">설화문화전</a></li>
+                </ul>
+              </li>
+              <li class="nav_d2 b500"><a href="#" class="nav_d2_menu nav_d3_menu">HERITAGE</a>
+                <ul class="nav_d3_box">
+                  <li class="nav_d3 b500"><a href="#">SINCE 1932</a></li>
+                  <li class="nav_d3"><a href="#">명작컬렉션</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="other_info">
+          <ul>
+            <li><a href="#">로그인</li>
+            <li>매장찾기</li>
+          </ul>
+          <button type="button" class="mobile_select_language">
+            <span>LANGUAGE</span>
+            <span class="language_select">한국/한국어 <img src="/images/main/icon/plus.png" alt="플러스아이콘"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- /Side MENU -->
+
+    <!-- Main -->
+    <main>
+      <section class="purpose">
+        <p class="title">
+          <span>BUILDING A WORLD OF BEAUTY</span>
+          <br>
+          POWERED BY ART AND HERITAGE
+        </p>
+        <p class="subtitle">
+          OUR PURPOSE
+        </p>
+        <p class="mtext">
+          예술과 헤리티지 정신으로 아름다움을 창조합니다.
+        </p>
+        <p class="stext">
+          우리의 고유한 헤리티지와 독자적인 피부 과학을 동력으로
+          <br>
+          시간과 세대를 초월하는 예술 작품과도 같은 제품을 만들어 냅니다.
+        </p>
+        <p class="stext">
+          세상 모든 사람들이 그들이 가진 헤리티지를 바탕으로
+          <br>
+          자신만의 아름다움을 만들 수 있도록 영감을 불어넣을 것입니다.
+        </p>
+      </section>
+      <div class="content_wrap">
+        <div class="navigation_box">
+          <ul class="navigation list-group">
+            <li><a href="#belief">OUR BELIEF</a></li>
+            <li><a href="#ingredient">OUR INGREDIENT</a></li>
+            <li><a href="#innovation">OUR INNOVATION</a></li>
+            <li><a href="#created">CREATED BY SULWHASOO</a></li>
+            <li><a href="#journey">OUR JOURNEY</a></li>
+          </ul>
+        </div>
+        <section class="belief" id="belief">
+          <div class="section_inner">
+            <div class="section_body">
+              <div class="section_text" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                <h1>our belief</h1>
+                <h2>
+                  설화수의 시선은 부분이 아닌 전체를 바라봅니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  설화수는 겉으로 드러난 문제뿐 아니라
+                  <br class="mo-only">
+                  피부 속 근본 원인까지 주목합니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  우리는 피부의 자생력을 회복하는 것이 진정한 해결책이며
+                  <br class="mo-only">
+                  피부가 가진 잠재 능력을 활성화 하는 것이 피부 건강을 위한
+                  <br class="mo-only">
+                  첫 단계라고 생각합니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  이에 설화수는 피부 능력을 활성화하는 윤조에센스를 시작으로
+                  <br class="mo-only">
+                  피부를 위한 베스트 스킨케어 루틴을 제안합니다.
+                </h2>
+              </div>
+              <div class="section_img" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                <picture>
+                  <source media="(max-width: 750px)" srcset="./images/about/brand_belief_content_img01_mo_kr_230511.jpg">
+                  <source media="(min-width: 1023px)" srcset="./images/about/brand_belief_content_img01_pc_kr_230511.jpg">
+                  <img src="./images/about/brand_belief_content_img01_pc_kr_230511.jpg" alt="이미지 설명">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ingredient" id="ingredient">
+          <div class="section_inner">
+            <div class="section_body">
+              <div class="section_text" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                <h1>
+                  OUR INGREDIENT
+                </h1>
+                <h2>
+                  예로부터 인삼은 동서양에서 탁월한 효능을 인정받은
+                  <br class="mo-only">
+                  전설적인 뿌리로 알려져 있습니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  “먹어서 좋은 인삼, 피부에 발라도 좋지 않을까?’ 라는
+                  <br class="mo-only">
+                  호기심에서 시작해 설화수의 건강한 피부를 위한 
+                  <br class="mo-only">
+                  인삼 연구는 멈추지 않고 이어졌습니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  우리는 인삼 연구 선구자로서 피부를 위한 인삼 연구를 거듭한 결과,
+                  <br class="mo-only">
+                  궁극의 안티에이징을 위한 인삼의 효능을 피부에 전달하는
+                  <br class="mo-only">
+                  해답을 찾아냈습니다.
+                </h2>
+                </div>
+                <div class="section_img" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                  <picture>
+                    <source media="(max-width: 750px)" srcset="./images/about/brand_belief_content_img02_mo_kr_230511.jpg">
+                    <source media="(min-width: 1023px)" srcset="./images/about/brand_belief_content_img02_pc_kr_230511.jpg">
+                    <img src="./images/about/brand_belief_content_img02_pc_kr_230511.jpg" alt="이미지 설명">
+                  </picture>
+               </div>
+            </div>
+          </div>
+        </section>
+        <section class="innovation" id="innovation">
+          <div class="section_inner">
+            <div class="section_body">
+              <div class="section_text" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                <h1>
+                  OUR INNOVATION
+                </h1>
+                <h2>
+                  설화수의 중추에는 설화수 한방 과학 연구 센터가 있습니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  설화수 한방 과학 연구 센터는 아시아의 지혜와 현대 과학을
+                  <br class="mo-only">
+                  끊임없이 접목하며 설화수만의 혁신을 이끌고 있습니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  1960년대부터 시작된 설화수의 인삼 연구는 자연의 재료로 만든
+                  <br class="mo-only">
+                  독보적 화장품을 만들기 위해 50여 년이 넘도록 계속되어 왔습니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  발전에 발전을 거듭한 현재, 설화수 한방 과학 연구 센터는
+                  <br class="mo-only">
+                  건강한 피부를 위한 최고의 솔루션을 끊임없이 만들어내고 있습니다.
+                </h2>
+                </div>
+                <div class="section_img" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+                  <picture>
+                    <source media="(max-width: 750px)" srcset="./images/about/brand_belief_content_img03_mo_kr_230511.jpg">
+                    <source media="(min-width: 1023px)" srcset="./images/about/brand_belief_content_img03_pc_kr_230511.jpg">
+                    <img src="./images/about/brand_belief_content_img03_pc_kr_230511.jpg" alt="이미지 설명">
+                  </picture>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="created" id="created">
+          <div class="section_inner">
+            <div class="section_body">
+              <div class="section_text" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                <h1>
+                  CREATED
+                  <br class="mo-only">
+                  BY SULWHASOO
+                </h1>
+                <h2>
+                  설화수가 만드는 제품은 한국의 미학과 현대적 감성이
+                  <br class="mo-only">
+                  조화롭게 공존하는 혁신의 결정체입니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  아름다운 피부를 위한 끊임 없는 노력과 수십년의 연구로
+                  <br class="mo-only">
+                  일구어낸 결과물입니다.
+                  <br>
+                  <span class="mo-margin"></span>
+                  세대와 시간을 초월해 사랑받는 설화수의 제품은
+                  <br class="mo-only">
+                  예술 작품과도 같습니다.
+                </h2>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper swiper_created"  data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-bottom">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper swiper_list">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="./images/about/brand_belief_content01_item01_kr_230511.jpg" alt="created">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/about/brand_belief_content01_item02_kr_230511.jpg" alt="created">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/about/brand_belief_content01_item03_kr_230511.jpg" alt="created">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="journey" id="journey">
+          <div class="section_inner">
+            <div class="sticky">
+              <div class="section_contents">
+                <div class="section_header">
+                  <p>our journey</p>
+                </div>
+                <div class="section_body">
+                  <div class="horizontal_scroll">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper_list">
+                      <!-- Slides -->
+                      <div class="swiper_list_item list_item_01">
+                        <div class="item_inner">
+                          <div class="journey_img">
+                            <img src="./images/about/brand_belief_content02_item01_kr_230511.jpg" alt="윤독정여사">
+                          </div>
+                          <div class="text_wrap">
+                            <p class="text_y">
+                              1932
+                            </p>
+                            <p class="text_m">
+                              설화수의 시작
+                            </p>
+                            <p class="text_s">
+                              윤독정 여사의 동백기름
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper_list_item list_item_02">
+                        <div class="item_inner">
+                          <div class="journey_img">
+                            <img src="./images/about/brand_belief_content02_item02_kr_230511.jpg" alt="윤독정여사">
+                          </div>
+                          <div class="text_wrap">
+                            <p class="text_y">
+                              1954
+                            </p>
+                            <p class="text_m">
+                              인삼 연구의 시작
+                            </p>
+                            <p class="text_s">
+                              국내 최초 화장품 연구실 설립
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper_list_item list_item_03">
+                        <div class="item_inner">
+                          <div class="journey_img">
+                            <img src="./images/about/brand_belief_content02_item03_kr_230511.jpg" alt="윤독정여사">
+                          </div>
+                          <div class="text_wrap">
+                            <p class="text_y">
+                              1966
+                            </p>
+                            <p class="text_m">
+                              ABC 인삼 크림 출시
+                            </p>
+                            <p class="text_s">
+                              최초의 인삼 화장품
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper_list_item list_item_04">
+                        <div class="item_inner">
+                          <div class="journey_img">
+                            <img src="./images/about/brand_belief_content02_item04_kr_230511.jpg" alt="윤독정여사">
+                          </div>
+                          <div class="text_wrap">
+                            <p class="text_y">
+                              1973
+                            </p>
+                            <p class="text_m">
+                              K-뷰티의 시작
+                            </p>
+                            <p class="text_s">
+                              진생삼미 해외 수출
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper_list_item list_item_05">
+                        <div class="item_inner">
+                          <div class="journey_img">
+                            <img src="./images/about/brand_belief_content02_item05_kr_230511.jpg" alt="윤독정여사">
+                          </div>
+                          <div class="text_wrap">
+                            <p class="text_y">
+                              1997
+                            </p>
+                            <p class="text_m">
+                              윤조에센스 출시
+                            </p>
+                            <p class="text_s">
+                              최초의 퍼스트 에센스
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper_list_item list_item_06">
+                        <div class="item_inner">
+                          <div class="journey_img">
+                            <img src="./images/about/brand_belief_content02_item06_kr_230511.jpg" alt="윤독정여사">
+                          </div>
+                          <div class="text_wrap">
+                            <p class="text_y">
+                              2021
+                            </p>
+                            <p class="text_m">
+                              설화수의 집
+                            </p>
+                            <p class="text_s">
+                              북촌 플래그십 스토어 오픈
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper_list_item list_item_07">
+                        <div class="item_inner">
+                          <div class="journey_img">
+                            <img src="./images/about/brand_belief_content02_item07_kr_230511.jpg" alt="윤독정여사">
+                          </div>
+                          <div class="text_wrap">
+                            <p class="text_y">
+                              2022
+                            </p>
+                            <p class="text_m">
+                              설화, 다시 피어나다
+                            </p>
+                            <p class="text_s">
+                              SULWHASOO REBLOOM
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="indicator">
+                      <div class="indicator_bar"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- /Main -->
+
+      <!-- Footer -->
+      <footer id="footer">
+        <!-- Moblie/Tablet Footer -->
+        <!-- SNS Area -->
+        <section class="sns_area">
+          <article><img src="./images/main/icon/sns_facebook.png" alt="페이스북"></article>
+          <article><img src="./images/main/icon/sns_instagram.png" alt="인스타그램"></article>
+          <article><img src="./images/main/icon/sns_youtube.png" alt="유튜브"></article>
+          <article><img src="./images/main/icon/sns_kakao.png" alt="카카오채널"></article>
+        </section>
+        <!-- /SNS Area -->
+        <div class="footer_info">
+          <div class="footer_toggle">
+            <span class="copyright">
+              <i class="copy">©</i>
+              <strong>AMOREPACIFIC</strong>
+              CORPORATION. All rights reserved.
+            </span>
+            <div class="toggle_btn"></div>
+          </div>
+          <div class="toggle_info">
+            <div class="inner_info_container">
+              <div class="inner_info">
+                <span>회사소개</span>
+                <span>서비스이용약관</span>
+                <span>UGC이용약관</span>
+                <span><strong>개인정보처리방침</strong></span>
+                <span>영상정보처리방침</span>
+                <span>사이트맵</span>
+              </div>
+              <div class="inner_info">
+                <p>고객서비스센터(수신자요금부담) : 080-023-5454</p>
+                <span>(월~금: AM 09:00~PM 06:00)</span>
+              </div>
+              <div class="footer_mark">
+                <article><img src="./images/main/accessibility.png" alt="웹접근성마크"></article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Moblie/Tablet Footer -->
+
+        <!-- PC Footer -->
+        <div class="footer_container">
+          <div class="footer_links">
+            <div class="footer_links_txt">
+              <p>회사소개</p>
+              <p>서비스이용약관</p>
+              <p>UGC이용약관</p>
+              <p><strong>개인정보처리방침</strong></p>
+              <p>영상정보처리방침</p>
+              <p>사이트맵</p>
+              <p>로그인</p>
+            </div>
+            <div class="footer_img">
+              <article class="access_icon"><img src="./images/main/accessibility.png" alt="웹접근성마크"></article>
+              <div class="footer_sns">
+                <article><img src="./images/main/icon/sns_facebook.png" alt="페이스북"></article>
+                <article><img src="./images/main/icon/sns_instagram.png" alt="인스타그램"></article>
+                <article><img src="./images/main/icon/sns_youtube.png" alt="유튜브"></article>
+                <article><img src="./images/main/icon/sns_kakao.png" alt="카카오채널"></article>
+              </div>
+            </div>
+          </div>
+          <div class="pc_footer_info">
+            <div class="pc_cs_info">
+              <span>고객서비스센터(수신자요금부담) : 080-023-5454 </span>
+              <span>(월~금: AM 09:00~PM 06:00)</span>
+            </div>
+            <div class="footer_copyright">
+              <p>
+                <i class="copy_icon">©</i>
+                <strong>AMOREPACIFIC</strong>
+                 CORPORATION. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /PC Footer -->
+
+      </footer>
+      <!-- /Footer -->
+
+    <!-- 쓰와이퍼 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- 애니메이션 JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+   
+   <!-- 스크롤 JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+   
+    <!-- 페이지 JS -->
+    <script src="./js/about.js"></script>
+  </body>
+</html>
