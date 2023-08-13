@@ -44,15 +44,18 @@
 >'제품' 페이지 
 
 ![127 0 0 1_5500_products html](https://github.com/judiking1/seolwhasoo/assets/110409369/39d74965-ae17-4235-8adc-af21b03eabf4)
+
 <br><br>
 
 
 
 >'About 설화수' 페이지
 
-![127 0 0 1_5500_about html (1)](https://github.com/judiking1/seolwhasoo/assets/110409369/34c9dbda-a662-4c06-bfdb-dc65f803e76b)
+![127 0 0 1_5500_about html](https://github.com/judiking1/seolwhasoo/assets/110409369/8a992220-ec86-4f7b-9c63-a7541bbd4789)
 
+<br>
 
+![127 0 0 1_5500_about html (1)](https://github.com/judiking1/seolwhasoo/assets/110409369/ca30f1ad-420b-432a-b7e2-71a86b02cd4e)
 
 
 
