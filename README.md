@@ -43,6 +43,8 @@
 
 >'제품' 페이지 
 
+![127 0 0 1_5500_products html](https://github.com/judiking1/seolwhasoo/assets/110409369/39d74965-ae17-4235-8adc-af21b03eabf4)
+
 <h2>모바일</h2>
 <p align="center">
 <img src="https://github.com/judiking1/seolwhasoo/assets/110409369/34ed4213-4b5d-4581-9695-498e7227bf00" alt="제품 모바일" width="300" height="600">
