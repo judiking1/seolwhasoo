@@ -45,33 +45,12 @@
 
 ![127 0 0 1_5500_products html](https://github.com/judiking1/seolwhasoo/assets/110409369/39d74965-ae17-4235-8adc-af21b03eabf4)
 
-<h2>모바일</h2>
-<p align="center">
-<img src="https://github.com/judiking1/seolwhasoo/assets/110409369/34ed4213-4b5d-4581-9695-498e7227bf00" alt="제품 모바일" width="300" height="600">
-</p>
 
-<h2>태블릿</h2>
-<p align="center">
-<img src="https://github.com/judiking1/seolwhasoo/assets/110409369/5d3569c1-6860-411a-b59e-2fe479902c84" alt="제품 태블릿" width="800" height="800">
-</p>
-
-<h2>PC</h2>
-<p align="center">
-<img src="https://github.com/judiking1/seolwhasoo/assets/110409369/ee1e6ca0-e9e6-4ff3-82ca-5592b0f6777e" alt="제품 PC" width="1200" height="800">
-</p>
-<br><br>
 
 >'About 설화수' 페이지
 
-<h2>모바일</h2>
-<p align="center">
-<img src="https://github.com/judiking1/seolwhasoo/assets/110409369/c468afa4-2dc2-4381-b296-ea5f80d64c98" alt="About 모바일" width="300" height="600">
-</p>
+![127 0 0 1_5500_about html](https://github.com/judiking1/seolwhasoo/assets/110409369/1a0a04dc-dde9-44df-a0c1-7d0ec37d94fe)
 
-<h2>태블릿+PC</h2>
-<p align="center">
-<img src="https://github.com/judiking1/seolwhasoo/assets/110409369/5a352a03-834d-4757-a17e-2d137035f7b6" alt="About 태블릿" width="800" height="800">
-</p>
 
 
 
