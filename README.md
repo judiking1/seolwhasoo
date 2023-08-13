@@ -12,7 +12,7 @@
 
 > HTML, CSS, JS, 여러 플러그인들을 통해 페이지 내 기능들을 구현하였습니다.<br>
 > 07.14 ~ 07.21 : 기획서 작성<br>
->(기획서 링크 : https://www.canva.com/design/DAFomO-biC8/voGdCpyZnkdjIOH70MxMlQ/view?utm_content=DAFomO-biC8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink )
+>(기획서 링크 : https://www.canva.com/design/DAFomO-biC8/voGdCpyZnkdjIOH70MxMlQ/view?utm_content=DAFomO-biC8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink )<br>
 > 07.22 ~ 07.29 : 각 *분담한 페이지 코딩<br>
 > *분담한 페이지: '제품', 'About설화수'<br>
 > 사용 툴: VS Code, Figma, Canva, Git
