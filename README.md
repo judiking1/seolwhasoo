@@ -15,7 +15,8 @@
 >(기획서 링크 : https://www.canva.com/design/DAFomO-biC8/voGdCpyZnkdjIOH70MxMlQ/view?utm_content=DAFomO-biC8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink )<br>
 > 07.22 ~ 07.29 : 각 *분담한 페이지 코딩<br>
 > *분담한 페이지: '제품', 'About설화수'<br>
-> 사용 툴: VS Code, Figma, Canva, Git
+> 사용 툴: VS Code, Figma, Canva, Git <br>
+> 팀 프로젝트 깃허브 주소 : https://github.com/AumKyungSub/group-anyway.git
 
 <br><br>
 
