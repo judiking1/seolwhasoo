@@ -16,8 +16,8 @@
 > 07.22 ~ 07.29 : 각 *분담한 페이지 코딩<br>
 > *분담한 페이지: '제품', 'About설화수'<br>
 > 사용 툴: VS Code, Figma, Canva, Git <br>
-> 팀 프로젝트 깃허브 주소 : https://github.com/AumKyungSub/group-anyway.git
-> 프로젝트 2(리액트) 페이지 소스 보기 : https://github.com/judiking1/seolwhasoo2.git <br>
+> 팀 프로젝트 깃허브 주소 : https://github.com/AumKyungSub/group-anyway.git<br>
+> 프로젝트 2(리액트) 페이지 소스 보기 : https://github.com/judiking1/seolwhasoo2.git
 
 <br><br>
 
